@@ -1381,7 +1381,7 @@ h1, h2, h3, h4 {
     }
 
     .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
     }
 
     .team-grid {
@@ -1416,6 +1416,79 @@ h1, h2, h3, h4 {
     .logo-icon {
         width: 45px;
         height: 45px;
+    }
+
+    /* Services Section - Force single column */
+    .services-section > .container > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Team Section - Force single column for practitioner cards */
+    section > .container > div[style*="grid-template-columns: repeat(4"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Testimonials Section - Force single column */
+    section > .container > div[style*="grid-template-columns: repeat(3"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Who We Help Section - Force single column */
+    section > .container > div[style*="grid-template-columns: repeat(2"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* The KMT Difference Section - Force single column */
+    section > .container > div[style*="grid-template-columns: 1fr 1.2fr"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Location Section - Force single column */
+    section > .container > div[style*="grid-template-columns: 1fr 1fr"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Partners Section - Force 2 columns, then 1 on smaller screens */
+    section > .container > div[style*="grid-template-columns: repeat(4"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 30px !important;
+    }
+
+    /* Reduce padding on sections */
+    section[style*="padding: 100px 0"] {
+        padding: 60px 0 !important;
+    }
+
+    section[style*="padding: 80px 0"] {
+        padding: 50px 0 !important;
+    }
+
+    /* Adjust card spacing */
+    .card-inner {
+        padding: 24px;
+    }
+
+    /* Make sure images stack properly */
+    section img[style*="width: 100%"] {
+        margin-bottom: 30px;
+    }
+
+    /* Adjust font sizes for mobile */
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+
+    h2[style*="font-size: 2.5rem"] {
+        font-size: 1.8rem !important;
+    }
+
+    h3[style*="font-size: 28px"] {
+        font-size: 22px !important;
+    }
+
+    /* Location map height */
+    section iframe[style*="height: 450px"] {
+        height: 300px !important;
     }
 }
 
@@ -1452,5 +1525,58 @@ h1, h2, h3, h4 {
 
     .cta-buttons {
         flex-direction: column;
+    }
+
+    /* Force all grids to single column on small mobile */
+    section > .container > div[style*="grid"],
+    .services-section > .container > div[style*="grid"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Partners Section - Force single column on small screens */
+    section > .container > div[style*="grid-template-columns: repeat(4"] {
+        grid-template-columns: 1fr !important;
+    }
+
+    /* Reduce section padding further */
+    section[style*="padding: 100px 0"],
+    section[style*="padding: 80px 0"] {
+        padding: 40px 0 !important;
+    }
+
+    /* Smaller card padding */
+    .card-inner {
+        padding: 20px;
+    }
+
+    /* Adjust practitioner card styles */
+    div[style*="padding: 24px"] {
+        padding: 20px !important;
+    }
+
+    /* Adjust gap spacing */
+    div[style*="gap: 30px"],
+    div[style*="gap: 40px"],
+    div[style*="gap: 60px"],
+    div[style*="gap: 80px"] {
+        gap: 20px !important;
+    }
+
+    /* Container padding */
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Smaller font sizes */
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    p[style*="font-size: 18px"] {
+        font-size: 16px !important;
+    }
+
+    p[style*="font-size: 16px"] {
+        font-size: 15px !important;
     }
 }
