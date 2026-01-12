@@ -1,5 +1,29 @@
 # KMT Medical Website Project
 
+**Last Updated:** 2026-01-12
+
+## Current Status
+
+### Completed
+- [x] Homepage rebrand (Women's Wellness → Holistic Wellness for all ages)
+- [x] New navigation structure implemented across all pages
+- [x] Naturopathy page created (8 service cards using Assessments template)
+- [x] Shop "Coming Soon" placeholder page created
+- [x] 3 locations section added (Oakville, Ajax, Maple)
+- [x] IV Therapy repositioned (medical wellness, not med spa)
+- [x] EmpowerHer de-emphasized as one program among many
+- [x] Footer updated with all 3 locations on all pages
+- [x] assessments.html updated with new nav/footer
+- [x] empowerher.html updated with new nav/footer
+
+### Pending
+- [ ] Dedicated Psychotherapy page (currently dropdown only)
+- [ ] Dedicated Holistic Wellness page (currently dropdown only)
+- [ ] Dedicated Contact Us page (currently dropdown only)
+- [ ] Ajax and Maple location addresses (TBD from client)
+
+---
+
 ## Client Overview
 
 **Business Name:** KMT Medical and Allied Health Group
@@ -113,14 +137,11 @@ Add to existing content:
 ### File Structure
 ```
 /
-├── index.html          # Homepage
-├── assessments.html    # Psychological Assessments (APPROVED)
-├── empowerher.html     # EmpowerHer Program (one program, not identity)
-├── naturopathy.html    # NEW - Naturopathic Medicine
-├── holistic.html       # NEW - Holistic Wellness
-├── psychotherapy.html  # NEW - Psychotherapy services
-├── shop.html           # NEW - Coming Soon placeholder
-├── contact.html        # NEW - Contact Us
+├── index.html          # Homepage (UPDATED - rebranded)
+├── assessments.html    # Psychological Assessments (APPROVED TEMPLATE)
+├── empowerher.html     # EmpowerHer Program (UPDATED - new nav/footer)
+├── naturopathy.html    # Naturopathic Medicine (CREATED)
+├── shop.html           # Shop Coming Soon (CREATED)
 ├── css/
 │   └── styles.css      # Main stylesheet
 ├── images/
@@ -129,8 +150,20 @@ Add to existing content:
 │   ├── doc2.avif       # Team member photo
 │   ├── doc3.avif       # Team member photo
 │   └── doc4.avif       # Team member photo
-└── docs/
-    └── requirements.md # Detailed requirements
+├── docs/
+│   ├── requirements.md # Detailed requirements
+│   ├── site-structure.md # Navigation and page hierarchy
+│   └── seo-guidelines.md # SEO strategy and keywords
+├── Issues/
+│   └── KMT Site Updates - 2026-01-12.docx # Client feedback
+└── CLAUDE.md           # This file - project context
+```
+
+### Pages Still Needed
+```
+├── holistic.html       # Holistic Wellness (IV Therapy, RMT)
+├── psychotherapy.html  # Psychotherapy services
+└── contact.html        # Contact Us with all locations
 ```
 
 ### Design System
@@ -153,6 +186,18 @@ Add to existing content:
 4. Use semantic HTML and accessible markup
 5. Mobile-responsive design is required
 6. Keep aesthetics/med-spa services de-emphasized throughout
+
+## Git Workflow
+
+**IMPORTANT: Update CLAUDE.md before any commit or git push.**
+
+Before committing changes:
+1. Update the "Current Status" section with completed/pending items
+2. Update the "Last Updated" date
+3. Update file structure if new files were added
+4. Document any new patterns or decisions made
+
+This ensures project context is always current for future development sessions.
 
 ## Reference Documents
 
