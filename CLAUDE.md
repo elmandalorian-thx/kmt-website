@@ -1,6 +1,6 @@
 # KMT Medical Website Project
 
-**Last Updated:** 2026-01-12
+**Last Updated:** 2026-01-13
 
 ## Current Status
 
@@ -15,6 +15,9 @@
 - [x] Footer updated with all 3 locations on all pages
 - [x] assessments.html updated with new nav/footer
 - [x] empowerher.html updated with new nav/footer
+- [x] **Header redesigned**: Logo now positioned above navigation menu (vertical layout)
+- [x] **Footer enhanced**: All 3 clinic locations prominently displayed with location cards, proper SVG social icons, business hours, and "Book Now" CTA button
+- [x] All 5 pages updated with consistent header and footer branding (index.html, assessments.html, empowerher.html, naturopathy.html, shop.html)
 
 ### Pending
 - [ ] Dedicated Psychotherapy page (currently dropdown only)
