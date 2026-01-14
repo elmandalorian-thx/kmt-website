@@ -32,6 +32,15 @@
 - [x] **Navigation updated**: Psychotherapy dropdown links to psychotherapy.html, Contact Us includes Team page and Contact page
 - [x] **Footer links updated**: All pages now link to psychotherapy.html instead of placeholder #
 
+#### Latest Updates (2026-01-14 - Session 3)
+- [x] **Perinatal page created** (`perinatal.html`): New dedicated page for Prenatal & Postnatal Support Services featuring Pamela Guardado - includes Prenatal Support, Postnatal Support, Night Support, Breastfeeding Support, Newborn Care Education
+- [x] **IV Therapy page separated**: Removed prenatal/postnatal content from ivtherapy.html - now IV-only (Athletic Recovery, Hydration, Weight Management, Stress Support, Iron Infusions)
+- [x] **Practitioner photos added**: All 8 practitioners now have named photos (karen.avif, ibby.avif, pamela.avif, ronald.avif, abeera.avif, rukshan.avif, shahana.avif, cindy.jpg)
+- [x] **Team page fully populated**: All 8 practitioners with correct photos, bios, and specialties
+- [x] **Dr. Ibby info corrected**: Updated with correct credentials (ND, MAc) and specialties (Genomic Wellness, SIBO/IBS, Pelvic Health, Fertility, Acupuncture)
+- [x] **Homepage team section updated**: Replaced placeholder names with actual practitioners (Karen, Ronald, Pamela, Ibby) with correct photos
+- [x] **Navigation updated across all pages**: Holistic Wellness dropdown now includes "Prenatal & Postnatal Support" link
+
 ### Pending
 - [ ] Dedicated Holistic Wellness landing page (currently dropdown only)
 - [ ] Ajax and Maple location addresses (TBD from client)
@@ -156,21 +165,26 @@ Add to existing content:
 ├── assessments.html    # Psychological Assessments (APPROVED TEMPLATE)
 ├── empowerher.html     # EmpowerHer Program (updated nav/footer)
 ├── naturopathy.html    # Naturopathic Medicine - Dr. Ibby Omole (OVERHAULED Jan 2026)
-├── ivtherapy.html      # IV Therapy & Perinatal Support - Pamela Guardado (NEW Jan 2026)
+├── ivtherapy.html      # IV Therapy & Wellness Infusions - Pamela Guardado (IV-only, Jan 2026)
+├── perinatal.html      # Prenatal & Postnatal Support - Pamela Guardado (NEW Jan 2026)
 ├── locations.html      # Our Locations page (NEW Jan 2026)
 ├── book.html           # Book Now / Meet Our Team page (NEW Jan 2026)
 ├── psychotherapy.html  # Psychotherapy services page (NEW Jan 2026)
 ├── contact.html        # Contact Us page with form (NEW Jan 2026)
-├── team.html           # Our Team page (NEW Jan 2026)
+├── team.html           # Our Team page - all 8 practitioners (NEW Jan 2026)
 ├── shop.html           # Shop Coming Soon placeholder
 ├── css/
 │   └── styles.css      # Main stylesheet
 ├── images/
 │   ├── kmtlogo.avif    # KMT Logo
-│   ├── doc1.avif       # Karen M. Thornton photo
-│   ├── doc2.avif       # Dr. Ronald Frey photo
-│   ├── doc3.avif       # Pamela Guardado photo
-│   └── doc4.avif       # Dr. Ibby Omole photo
+│   ├── karen.avif      # Karen M. Thornton - Clinical Director
+│   ├── ibby.avif       # Dr. Ibby Omole - Naturopathic Doctor
+│   ├── pamela.avif     # Pamela Guardado - Wellness Nurse
+│   ├── ronald.avif     # Dr. Ronald Frey - Clinical Psychologist
+│   ├── abeera.avif     # Abeera Rahil - Psychotherapist (Qualifying)
+│   ├── rukshan.avif    # Rukshan Mehta - RSW, Psychotherapist
+│   ├── shahana.avif    # Shahana Sittampalam - RP (Qualifying), Psychometrist
+│   └── cindy.jpg       # Cindy Goodman Stulberg - Psychologist
 ├── docs/
 │   ├── requirements.md # Detailed requirements
 │   ├── site-structure.md # Navigation and page hierarchy
