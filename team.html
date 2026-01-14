@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Your Appointment | KMT Medical & Allied Health</title>
-    <meta name="description" content="Book an appointment with our team of psychologists, naturopathic doctors, and wellness practitioners. Oakville, Ajax, and Maple locations.">
+    <title>Our Team | KMT Medical & Allied Health</title>
+    <meta name="description" content="Meet the dedicated team of psychotherapists, psychologists, naturopathic doctors, and wellness practitioners at KMT Medical & Allied Health Group.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -26,11 +26,22 @@
             transform: translateY(-8px);
             box-shadow: 0 20px 60px rgba(26, 58, 74, 0.12);
         }
+        .team-card.featured {
+            grid-column: span 3;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 0;
+        }
         .team-photo {
             width: 100%;
-            height: 280px;
+            height: 320px;
             overflow: hidden;
-            background: var(--kmt-light);
+            background: linear-gradient(135deg, var(--kmt-light) 0%, #e8f4f8 100%);
+            position: relative;
+        }
+        .team-card.featured .team-photo {
+            height: 100%;
+            min-height: 380px;
         }
         .team-photo img {
             width: 100%;
@@ -38,15 +49,36 @@
             object-fit: cover;
             object-position: top center;
         }
+        .team-photo.placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .team-photo.placeholder::after {
+            content: attr(data-initials);
+            font-family: 'Playfair Display', serif;
+            font-size: 64px;
+            font-weight: 600;
+            color: var(--kmt-teal);
+            opacity: 0.3;
+        }
         .team-info {
             padding: 30px;
-            text-align: center;
+        }
+        .team-card.featured .team-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 40px;
         }
         .team-info h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 22px;
+            font-size: 24px;
             color: var(--text-primary);
             margin-bottom: 8px;
+        }
+        .team-card.featured .team-info h3 {
+            font-size: 32px;
         }
         .team-role {
             color: var(--kmt-teal);
@@ -61,32 +93,56 @@
             font-size: 13px;
             margin-bottom: 16px;
         }
+        .team-bio {
+            color: var(--text-secondary);
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
         .team-specialties {
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            justify-content: center;
             margin-bottom: 20px;
         }
         .team-specialty {
             background: var(--kmt-light);
             color: var(--kmt-teal);
-            padding: 4px 12px;
+            padding: 6px 14px;
             border-radius: 20px;
             font-size: 12px;
             font-weight: 500;
         }
+        .consultant-badge {
+            display: inline-block;
+            background: var(--kmt-coral);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-left: 8px;
+            vertical-align: middle;
+        }
         @media (max-width: 1024px) {
             .team-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+            .team-card.featured {
+                grid-column: span 2;
+                grid-template-columns: 1fr;
+            }
+            .team-card.featured .team-photo {
+                height: 350px;
             }
         }
         @media (max-width: 640px) {
             .team-grid {
                 grid-template-columns: 1fr;
             }
-            .team-photo {
-                height: 320px;
+            .team-card.featured {
+                grid-column: span 1;
             }
         }
     </style>
@@ -167,17 +223,21 @@
     </header>
 
     <!-- HERO SECTION -->
-    <section class="hero" style="min-height: 50vh;">
+    <section class="hero" style="min-height: 45vh;">
         <div class="hero-orb hero-orb-1"></div>
         <div class="hero-orb hero-orb-2"></div>
         <div class="hero-orb hero-orb-3"></div>
 
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">Schedule Your Visit</div>
-                <h1>Book Your <em>Appointment</em></h1>
-                <p class="hero-description">Choose a practitioner and schedule your consultation. We offer in-person appointments at our Oakville, Ajax, and Maple locations, plus virtual options across Ontario.</p>
+                <div class="hero-badge">Meet Our Team</div>
+                <h1>Dedicated <em>Professionals</em></h1>
+                <p class="hero-description">Our multidisciplinary team of therapists, doctors, and wellness specialists work together to provide comprehensive, integrated care.</p>
                 <div class="hero-cta-group">
+                    <a href="book.html" class="btn btn-primary">
+                        Book Now
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
                     <a href="tel:9058295686" class="btn btn-glass">
                         (905) 829-5686
                     </a>
@@ -186,18 +246,18 @@
         </div>
     </section>
 
-    <!-- TEAM GRID SECTION -->
+    <!-- LEADERSHIP SECTION -->
     <section style="background: var(--kmt-light); padding: 100px 0;">
         <div class="container">
             <div class="section-header">
-                <span class="section-label">Our Team</span>
-                <h2>Meet Our Practitioners</h2>
-                <p>Select a practitioner below to learn more about their expertise and book your appointment.</p>
+                <span class="section-label">Leadership</span>
+                <h2>Clinical Leadership</h2>
+                <p>Our experienced leadership team sets the standard for compassionate, evidence-based care.</p>
             </div>
 
             <div class="team-grid">
-                <!-- Karen M. Thornton -->
-                <div class="team-card">
+                <!-- Karen M. Thornton - Featured -->
+                <div class="team-card featured">
                     <div class="team-photo">
                         <img src="images/doc1.avif" alt="Karen M. Thornton - Clinical Director">
                     </div>
@@ -205,15 +265,30 @@
                         <h3>Karen M. Thornton</h3>
                         <p class="team-role">Clinical Director</p>
                         <p class="team-credentials">RSW, Psychotherapist</p>
+                        <p class="team-bio">As the founder and Clinical Director of KMT Medical & Allied Health Group, Karen brings extensive experience in psychotherapy and mental health care. Her vision is to create an integrated wellness practice where clients can access comprehensive care under one roof. Karen's approach focuses on helping individuals feel healthy, empowered, and equipped with new skills and strategies for lasting change.</p>
                         <div class="team-specialties">
                             <span class="team-specialty">Psychotherapy</span>
                             <span class="team-specialty">Trauma-Informed Care</span>
+                            <span class="team-specialty">Leadership</span>
                             <span class="team-specialty">Integrative Wellness</span>
                         </div>
-                        <a href="#" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                        <a href="book.html" class="btn btn-primary">Book with Karen</a>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CORE TEAM SECTION -->
+    <section style="background: var(--white); padding: 100px 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Core Team</span>
+                <h2>Our Practitioners</h2>
+                <p>Dedicated professionals providing personalized care across mental health, naturopathic medicine, and wellness.</p>
+            </div>
+
+            <div class="team-grid">
                 <!-- Dr. Ibby Omole -->
                 <div class="team-card">
                     <div class="team-photo">
@@ -227,8 +302,9 @@
                             <span class="team-specialty">Genomic Wellness</span>
                             <span class="team-specialty">Gut Health</span>
                             <span class="team-specialty">Fertility</span>
+                            <span class="team-specialty">Acupuncture</span>
                         </div>
-                        <a href="#" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                        <a href="book.html" class="btn btn-primary" style="width: 100%;">Book Now</a>
                     </div>
                 </div>
 
@@ -245,18 +321,64 @@
                             <span class="team-specialty">IV Therapy</span>
                             <span class="team-specialty">Prenatal Support</span>
                             <span class="team-specialty">Postnatal Care</span>
+                            <span class="team-specialty">Wellness</span>
                         </div>
-                        <a href="#" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                        <a href="book.html" class="btn btn-primary" style="width: 100%;">Book Now</a>
                     </div>
                 </div>
 
+                <!-- Abeera Rahil -->
+                <div class="team-card">
+                    <div class="team-photo placeholder" data-initials="AR"></div>
+                    <div class="team-info">
+                        <h3>Abeera Rahil</h3>
+                        <p class="team-role">Psychotherapist</p>
+                        <p class="team-credentials">Qualifying</p>
+                        <div class="team-specialties">
+                            <span class="team-specialty">Individual Therapy</span>
+                            <span class="team-specialty">Mental Health</span>
+                            <span class="team-specialty">Counseling</span>
+                        </div>
+                        <a href="book.html" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Rukshan Mehta -->
+                <div class="team-card">
+                    <div class="team-photo placeholder" data-initials="RM"></div>
+                    <div class="team-info">
+                        <h3>Rukshan Mehta</h3>
+                        <p class="team-role">Psychotherapist</p>
+                        <p class="team-credentials">RSW</p>
+                        <div class="team-specialties">
+                            <span class="team-specialty">Social Work</span>
+                            <span class="team-specialty">Psychotherapy</span>
+                            <span class="team-specialty">Mental Health</span>
+                        </div>
+                        <a href="book.html" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONSULTANTS SECTION -->
+    <section style="background: var(--kmt-light); padding: 100px 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Consultants</span>
+                <h2>Consulting Specialists</h2>
+                <p>Expert consultants who collaborate with our core team to provide specialized assessments and care.</p>
+            </div>
+
+            <div class="team-grid">
                 <!-- Dr. Ronald Frey -->
                 <div class="team-card">
                     <div class="team-photo">
                         <img src="images/doc2.avif" alt="Dr. Ronald Frey - Clinical/Forensic Psychologist">
                     </div>
                     <div class="team-info">
-                        <h3>Dr. Ronald Frey</h3>
+                        <h3>Dr. Ronald Frey <span class="consultant-badge">Consultant</span></h3>
                         <p class="team-role">Clinical/Forensic Psychologist</p>
                         <p class="team-credentials">Ph.D., C.Psych.</p>
                         <div class="team-specialties">
@@ -264,44 +386,42 @@
                             <span class="team-specialty">Assessments</span>
                             <span class="team-specialty">Clinical Evaluation</span>
                         </div>
-                        <a href="#" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                        <a href="book.html" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Cindy Goodman Stulberg -->
+                <div class="team-card">
+                    <div class="team-photo placeholder" data-initials="CGS"></div>
+                    <div class="team-info">
+                        <h3>Cindy Goodman Stulberg <span class="consultant-badge">Consultant</span></h3>
+                        <p class="team-role">Psychologist</p>
+                        <p class="team-credentials">C.Psych.</p>
+                        <div class="team-specialties">
+                            <span class="team-specialty">Psychology</span>
+                            <span class="team-specialty">Assessments</span>
+                            <span class="team-specialty">Consultation</span>
+                        </div>
+                        <a href="book.html" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Shahana Sittampalam -->
+                <div class="team-card">
+                    <div class="team-photo placeholder" data-initials="SS"></div>
+                    <div class="team-info">
+                        <h3>Shahana Sittampalam <span class="consultant-badge">Consultant</span></h3>
+                        <p class="team-role">Psychometrist</p>
+                        <p class="team-credentials">RP (Qualifying)</p>
+                        <div class="team-specialties">
+                            <span class="team-specialty">Psychometrics</span>
+                            <span class="team-specialty">Testing</span>
+                            <span class="team-specialty">Assessments</span>
+                        </div>
+                        <a href="book.html" class="btn btn-primary" style="width: 100%;">Book Now</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
-    <section style="background: var(--white); padding: 80px 0;">
-        <div class="container" style="max-width: 800px; text-align: center;">
-            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 24px;">Prefer to Call?</h2>
-            <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 30px; line-height: 1.8;">Our reception team is happy to help you book an appointment, answer questions about our services, or connect you with the right practitioner for your needs.</p>
-            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
-                <a href="tel:9058295686" class="btn btn-primary" style="font-size: 18px; padding: 16px 32px;">(905) 829-5686</a>
-                <a href="mailto:reception@kmthealth.com" class="btn" style="font-size: 18px; padding: 16px 32px; border: 2px solid var(--kmt-teal); color: var(--kmt-teal); background: transparent;">Email Us</a>
-            </div>
-
-            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: center; margin-top: 60px;">
-                <div>
-                    <div style="font-size: 40px; margin-bottom: 12px;">&#128205;</div>
-                    <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Oakville (Main)</h4>
-                    <p style="font-size: 14px; color: var(--text-muted);">1939 Ironoak Way, Unit A204</p>
-                </div>
-                <div>
-                    <div style="font-size: 40px; margin-bottom: 12px;">&#128205;</div>
-                    <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Ajax</h4>
-                    <p style="font-size: 14px; color: var(--text-muted);">Durham Region</p>
-                </div>
-                <div>
-                    <div style="font-size: 40px; margin-bottom: 12px;">&#128205;</div>
-                    <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Maple</h4>
-                    <p style="font-size: 14px; color: var(--text-muted);">Woodbridge Area</p>
-                </div>
-            </div>
-
-            <a href="locations.html" style="display: inline-block; margin-top: 30px; color: var(--kmt-teal); font-weight: 600; text-decoration: none;">
-                View All Locations &rarr;
-            </a>
         </div>
     </section>
 
@@ -309,11 +429,11 @@
     <section class="cta-section">
         <div class="cta-content">
             <div class="container">
-                <h2>New Patient? Start Here</h2>
-                <p>If you're new to KMT Medical, our team will help you find the right service and practitioner for your unique needs. Call us to get started on your wellness journey.</p>
+                <h2>Ready to Start Your Wellness Journey?</h2>
+                <p>Our team is here to provide compassionate, comprehensive care tailored to your unique needs.</p>
                 <div class="cta-buttons">
-                    <a href="tel:9058295686" class="btn btn-primary">(905) 829-5686</a>
-                    <a href="locations.html" class="btn btn-white">Find a Location</a>
+                    <a href="book.html" class="btn btn-primary">Book Your Appointment</a>
+                    <a href="tel:9058295686" class="btn btn-white">(905) 829-5686</a>
                 </div>
             </div>
         </div>

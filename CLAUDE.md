@@ -16,16 +16,23 @@
 
 #### January 2026 Updates (Site updates - 2026-01-14.docx)
 - [x] **Naturopathy page overhauled**: Complete rewrite featuring Dr. Ibby Omole, ND with new services (Genomic Wellness Analysis, Gut Intelligence Program, Fertility & Preconception Care, Pelvic Health, Women's Health, Acupuncture & TCM)
-- [x] **IV Therapy page created** (`ivtherapy.html`): New page featuring Pamela Inez, RPN with Athletic Recovery, Hangover Relief, Weight Management, Stress/Burnout, Iron Infusions, and Prenatal/Postnatal Support
+- [x] **IV Therapy page created** (`ivtherapy.html`): New page featuring Pamela Guardado, Wellness Nurse with Athletic Recovery, Hangover Relief, Weight Management, Stress/Burnout, Iron Infusions, and Prenatal/Postnatal Support
 - [x] **Locations page created** (`locations.html`): Dedicated page with 3 location cards (Oakville main, Ajax, Maple) with addresses, hours, and directions
-- [x] **Book Now page created** (`book.html`): Team-style page with practitioner cards (Karen M. Thornton, Dr. Ibby Omole, Pamela Inez) and booking CTAs
+- [x] **Book Now page created** (`book.html`): Team-style page with practitioner cards (Karen M. Thornton, Dr. Ibby Omole, Pamela Guardado) and booking CTAs
 - [x] **Footer redesigned**: Sleeker design - removed location card boxes, replaced with simple clickable location links with "Main" badge for Oakville
 - [x] **Navigation updated**: Naturopathy dropdown now shows new services (Genomic Wellness, Gut Intelligence, etc.), Holistic Wellness links to ivtherapy.html, Contact Us links to book.html and locations.html
 - [x] **"In Oakville" removed**: Hero headlines on index.html and naturopathy.html no longer mention Oakville specifically (site represents all 3 locations)
 - [x] **Homepage naturopathy card updated**: Now features Dr. Ibby Omole with new service descriptions
 
+#### Latest Updates (2026-01-14 - Session 2)
+- [x] **Psychotherapy page created** (`psychotherapy.html`): Full services page with Individual Therapy, Couples Therapy, EMDR, Family Therapy, Teen Counseling, Reunification Therapy, Group Therapy
+- [x] **Contact page created** (`contact.html`): Simple contact form with locations summary and Book Now CTA
+- [x] **Team page created** (`team.html`): Full team page with Leadership (Karen M. Thornton), Core Team (Dr. Ibby Omole, Pamela Guardado, Abeera Rahil, Rukshan Mehta), and Consultants (Dr. Ronald Frey, Cindy Goodman Stulberg, Shahana Sittampalam)
+- [x] **Practitioner info corrected**: Fixed "Pamela Inez" to "Pamela Guardado" across all pages, corrected Karen's title to "Clinical Director / RSW, Psychotherapist"
+- [x] **Navigation updated**: Psychotherapy dropdown links to psychotherapy.html, Contact Us includes Team page and Contact page
+- [x] **Footer links updated**: All pages now link to psychotherapy.html instead of placeholder #
+
 ### Pending
-- [ ] Dedicated Psychotherapy page (currently dropdown only)
 - [ ] Dedicated Holistic Wellness landing page (currently dropdown only)
 - [ ] Ajax and Maple location addresses (TBD from client)
 - [ ] Booking system integration (Book buttons currently use placeholder links)
@@ -149,18 +156,21 @@ Add to existing content:
 ├── assessments.html    # Psychological Assessments (APPROVED TEMPLATE)
 ├── empowerher.html     # EmpowerHer Program (updated nav/footer)
 ├── naturopathy.html    # Naturopathic Medicine - Dr. Ibby Omole (OVERHAULED Jan 2026)
-├── ivtherapy.html      # IV Therapy & Perinatal Support - Pamela Inez (NEW Jan 2026)
+├── ivtherapy.html      # IV Therapy & Perinatal Support - Pamela Guardado (NEW Jan 2026)
 ├── locations.html      # Our Locations page (NEW Jan 2026)
 ├── book.html           # Book Now / Meet Our Team page (NEW Jan 2026)
+├── psychotherapy.html  # Psychotherapy services page (NEW Jan 2026)
+├── contact.html        # Contact Us page with form (NEW Jan 2026)
+├── team.html           # Our Team page (NEW Jan 2026)
 ├── shop.html           # Shop Coming Soon placeholder
 ├── css/
 │   └── styles.css      # Main stylesheet
 ├── images/
 │   ├── kmtlogo.avif    # KMT Logo
 │   ├── doc1.avif       # Karen M. Thornton photo
-│   ├── doc2.avif       # Team member photo
-│   ├── doc3.avif       # Team member photo
-│   └── doc4.avif       # Team member photo
+│   ├── doc2.avif       # Dr. Ronald Frey photo
+│   ├── doc3.avif       # Pamela Guardado photo
+│   └── doc4.avif       # Dr. Ibby Omole photo
 ├── docs/
 │   ├── requirements.md # Detailed requirements
 │   ├── site-structure.md # Navigation and page hierarchy
@@ -169,14 +179,13 @@ Add to existing content:
 │   ├── KMT Site Updates - 2026-01-12.docx # Client feedback
 │   ├── Site updates - 2026-01-14.docx # January 2026 updates
 │   ├── KMT_Naturopathy_Page_Copy.docx # Dr. Ibby Omole content
-│   └── KMT_IV_Therapy_Page_Copy.docx # Pamela Inez IV Therapy content
+│   └── KMT_IV_Therapy_Page_Copy.docx # Pamela Guardado IV Therapy content
 └── CLAUDE.md           # This file - project context
 ```
 
 ### Pages Still Needed
 ```
 ├── holistic.html       # Holistic Wellness landing page (RMT, etc.)
-└── psychotherapy.html  # Psychotherapy services page
 ```
 
 ### Design System
