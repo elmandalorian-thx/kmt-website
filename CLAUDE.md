@@ -1,29 +1,34 @@
 # KMT Medical Website Project
 
-**Last Updated:** 2026-01-13
+**Last Updated:** 2026-01-14
 
 ## Current Status
 
 ### Completed
 - [x] Homepage rebrand (Women's Wellness → Holistic Wellness for all ages)
 - [x] New navigation structure implemented across all pages
-- [x] Naturopathy page created (8 service cards using Assessments template)
 - [x] Shop "Coming Soon" placeholder page created
 - [x] 3 locations section added (Oakville, Ajax, Maple)
 - [x] IV Therapy repositioned (medical wellness, not med spa)
 - [x] EmpowerHer de-emphasized as one program among many
-- [x] Footer updated with all 3 locations on all pages
-- [x] assessments.html updated with new nav/footer
-- [x] empowerher.html updated with new nav/footer
 - [x] **Header redesigned**: Logo now positioned above navigation menu (vertical layout)
-- [x] **Footer enhanced**: All 3 clinic locations prominently displayed with location cards, proper SVG social icons, business hours, and "Book Now" CTA button
-- [x] All 5 pages updated with consistent header and footer branding (index.html, assessments.html, empowerher.html, naturopathy.html, shop.html)
+- [x] All pages updated with consistent header and footer branding
+
+#### January 2026 Updates (Site updates - 2026-01-14.docx)
+- [x] **Naturopathy page overhauled**: Complete rewrite featuring Dr. Ibby Omole, ND with new services (Genomic Wellness Analysis, Gut Intelligence Program, Fertility & Preconception Care, Pelvic Health, Women's Health, Acupuncture & TCM)
+- [x] **IV Therapy page created** (`ivtherapy.html`): New page featuring Pamela Inez, RPN with Athletic Recovery, Hangover Relief, Weight Management, Stress/Burnout, Iron Infusions, and Prenatal/Postnatal Support
+- [x] **Locations page created** (`locations.html`): Dedicated page with 3 location cards (Oakville main, Ajax, Maple) with addresses, hours, and directions
+- [x] **Book Now page created** (`book.html`): Team-style page with practitioner cards (Karen M. Thornton, Dr. Ibby Omole, Pamela Inez) and booking CTAs
+- [x] **Footer redesigned**: Sleeker design - removed location card boxes, replaced with simple clickable location links with "Main" badge for Oakville
+- [x] **Navigation updated**: Naturopathy dropdown now shows new services (Genomic Wellness, Gut Intelligence, etc.), Holistic Wellness links to ivtherapy.html, Contact Us links to book.html and locations.html
+- [x] **"In Oakville" removed**: Hero headlines on index.html and naturopathy.html no longer mention Oakville specifically (site represents all 3 locations)
+- [x] **Homepage naturopathy card updated**: Now features Dr. Ibby Omole with new service descriptions
 
 ### Pending
 - [ ] Dedicated Psychotherapy page (currently dropdown only)
-- [ ] Dedicated Holistic Wellness page (currently dropdown only)
-- [ ] Dedicated Contact Us page (currently dropdown only)
+- [ ] Dedicated Holistic Wellness landing page (currently dropdown only)
 - [ ] Ajax and Maple location addresses (TBD from client)
+- [ ] Booking system integration (Book buttons currently use placeholder links)
 
 ---
 
@@ -140,11 +145,14 @@ Add to existing content:
 ### File Structure
 ```
 /
-├── index.html          # Homepage (UPDATED - rebranded)
+├── index.html          # Homepage (rebranded, updated nav/footer)
 ├── assessments.html    # Psychological Assessments (APPROVED TEMPLATE)
-├── empowerher.html     # EmpowerHer Program (UPDATED - new nav/footer)
-├── naturopathy.html    # Naturopathic Medicine (CREATED)
-├── shop.html           # Shop Coming Soon (CREATED)
+├── empowerher.html     # EmpowerHer Program (updated nav/footer)
+├── naturopathy.html    # Naturopathic Medicine - Dr. Ibby Omole (OVERHAULED Jan 2026)
+├── ivtherapy.html      # IV Therapy & Perinatal Support - Pamela Inez (NEW Jan 2026)
+├── locations.html      # Our Locations page (NEW Jan 2026)
+├── book.html           # Book Now / Meet Our Team page (NEW Jan 2026)
+├── shop.html           # Shop Coming Soon placeholder
 ├── css/
 │   └── styles.css      # Main stylesheet
 ├── images/
@@ -158,15 +166,17 @@ Add to existing content:
 │   ├── site-structure.md # Navigation and page hierarchy
 │   └── seo-guidelines.md # SEO strategy and keywords
 ├── Issues/
-│   └── KMT Site Updates - 2026-01-12.docx # Client feedback
+│   ├── KMT Site Updates - 2026-01-12.docx # Client feedback
+│   ├── Site updates - 2026-01-14.docx # January 2026 updates
+│   ├── KMT_Naturopathy_Page_Copy.docx # Dr. Ibby Omole content
+│   └── KMT_IV_Therapy_Page_Copy.docx # Pamela Inez IV Therapy content
 └── CLAUDE.md           # This file - project context
 ```
 
 ### Pages Still Needed
 ```
-├── holistic.html       # Holistic Wellness (IV Therapy, RMT)
-├── psychotherapy.html  # Psychotherapy services
-└── contact.html        # Contact Us with all locations
+├── holistic.html       # Holistic Wellness landing page (RMT, etc.)
+└── psychotherapy.html  # Psychotherapy services page
 ```
 
 ### Design System

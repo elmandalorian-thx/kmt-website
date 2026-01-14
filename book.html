@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Appointment | KMT Medical & Allied Health</title>
+    <meta name="description" content="Book an appointment with our team of psychologists, naturopathic doctors, and wellness practitioners. Oakville, Ajax, and Maple locations.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+        .team-card {
+            background: var(--white);
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(26, 58, 74, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .team-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(26, 58, 74, 0.12);
+        }
+        .team-photo {
+            width: 100%;
+            height: 280px;
+            overflow: hidden;
+            background: var(--kmt-light);
+        }
+        .team-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+        }
+        .team-info {
+            padding: 30px;
+            text-align: center;
+        }
+        .team-info h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+        .team-role {
+            color: var(--kmt-teal);
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+        .team-credentials {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+        .team-specialties {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .team-specialty {
+            background: var(--kmt-light);
+            color: var(--kmt-teal);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        @media (max-width: 1024px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 640px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-photo {
+                height: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER / NAVIGATION -->
+    <header class="header">
+        <div class="header-main">
+            <a href="index.html" class="logo">
+                <img src="images/kmtlogo.avif" alt="KMT Medical and Allied Health Group" class="logo-image" style="height: 60px; width: auto;">
+            </a>
+
+            <div class="nav-wrapper">
+                <ul class="main-nav" id="mainNav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Psychotherapy <span class="dropdown-arrow">&#9660;</span></a>
+                        <div class="dropdown-menu">
+                            <a href="#">Individual Therapy</a>
+                            <a href="#">Couples Therapy</a>
+                            <a href="#">Family Therapy</a>
+                            <a href="#">Teen Counseling</a>
+                            <a href="#">EMDR Therapy</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="assessments.html" class="nav-link">Assessments <span class="dropdown-arrow">&#9660;</span></a>
+                        <div class="dropdown-menu">
+                            <a href="assessments.html">All Assessments</a>
+                            <a href="assessments.html#neuropsychological">Neuropsychological</a>
+                            <a href="assessments.html#psychoeducational">Psychoeducational</a>
+                            <a href="assessments.html#psychodiagnostic">Psychodiagnostic</a>
+                            <a href="assessments.html#rehabilitation">Rehabilitation</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="naturopathy.html" class="nav-link">Naturopathy <span class="dropdown-arrow">&#9660;</span></a>
+                        <div class="dropdown-menu">
+                            <a href="naturopathy.html">All Services</a>
+                            <a href="naturopathy.html#genomic-wellness">Genomic Wellness</a>
+                            <a href="naturopathy.html#gut-intelligence">Gut Intelligence</a>
+                            <a href="naturopathy.html#fertility">Fertility Support</a>
+                            <a href="naturopathy.html#pelvic-health">Pelvic Health</a>
+                            <a href="naturopathy.html#acupuncture">Acupuncture</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Holistic Wellness <span class="dropdown-arrow">&#9660;</span></a>
+                        <div class="dropdown-menu">
+                            <a href="ivtherapy.html">IV Therapy</a>
+                            <a href="#">Registered Massage Therapy</a>
+                            <a href="empowerher.html">EmpowerHer Program</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="shop.html" class="nav-link">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact Us <span class="dropdown-arrow">&#9660;</span></a>
+                        <div class="dropdown-menu">
+                            <a href="book.html">Book Appointment</a>
+                            <a href="locations.html">Our Locations</a>
+                            <a href="#">FAQs</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="book.html" class="nav-link nav-cta">Book Your Appointment</a>
+                    </li>
+                </ul>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero" style="min-height: 50vh;">
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">Schedule Your Visit</div>
+                <h1>Book Your <em>Appointment</em></h1>
+                <p class="hero-description">Choose a practitioner and schedule your consultation. We offer in-person appointments at our Oakville, Ajax, and Maple locations, plus virtual options across Ontario.</p>
+                <div class="hero-cta-group">
+                    <a href="tel:9058295686" class="btn btn-glass">
+                        (905) 829-5686
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TEAM GRID SECTION -->
+    <section style="background: var(--kmt-light); padding: 100px 0;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Our Team</span>
+                <h2>Meet Our Practitioners</h2>
+                <p>Select a practitioner below to learn more about their expertise and book your appointment.</p>
+            </div>
+
+            <div class="team-grid">
+                <!-- Karen M. Thornton -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/doc1.avif" alt="Karen M. Thornton - Founder & Registered Psychologist">
+                    </div>
+                    <div class="team-info">
+                        <h3>Karen M. Thornton</h3>
+                        <p class="team-role">Founder & Registered Psychologist</p>
+                        <p class="team-credentials">M.Ed., C.Psych., C.C.C.</p>
+                        <div class="team-specialties">
+                            <span class="team-specialty">Health Psychology</span>
+                            <span class="team-specialty">Trauma-Informed Care</span>
+                            <span class="team-specialty">Integrative Wellness</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Dr. Ibby Omole -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/doc4.avif" alt="Dr. Ibby Omole - Naturopathic Doctor">
+                    </div>
+                    <div class="team-info">
+                        <h3>Dr. Ibby Omole</h3>
+                        <p class="team-role">Naturopathic Doctor</p>
+                        <p class="team-credentials">ND, MAc</p>
+                        <div class="team-specialties">
+                            <span class="team-specialty">Genomic Wellness</span>
+                            <span class="team-specialty">Gut Health</span>
+                            <span class="team-specialty">Fertility</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Pamela Inez -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/doc3.avif" alt="Pamela Inez - Registered Practical Nurse">
+                    </div>
+                    <div class="team-info">
+                        <h3>Pamela Inez</h3>
+                        <p class="team-role">Registered Practical Nurse</p>
+                        <p class="team-credentials">RPN</p>
+                        <div class="team-specialties">
+                            <span class="team-specialty">IV Therapy</span>
+                            <span class="team-specialty">Prenatal Support</span>
+                            <span class="team-specialty">Postnatal Care</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="team-card">
+                    <div class="team-photo">
+                        <img src="images/doc2.avif" alt="Registered Psychologist">
+                    </div>
+                    <div class="team-info">
+                        <h3>Clinical Psychologist</h3>
+                        <p class="team-role">Registered Psychologist</p>
+                        <p class="team-credentials">Ph.D., C.Psych.</p>
+                        <div class="team-specialties">
+                            <span class="team-specialty">Neuropsychology</span>
+                            <span class="team-specialty">Assessments</span>
+                            <span class="team-specialty">ADHD Testing</span>
+                        </div>
+                        <a href="#" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section style="background: var(--white); padding: 80px 0;">
+        <div class="container" style="max-width: 800px; text-align: center;">
+            <h2 style="font-family: 'Playfair Display', serif; font-size: 2.5rem; margin-bottom: 24px;">Prefer to Call?</h2>
+            <p style="font-size: 18px; color: var(--text-secondary); margin-bottom: 30px; line-height: 1.8;">Our reception team is happy to help you book an appointment, answer questions about our services, or connect you with the right practitioner for your needs.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px;">
+                <a href="tel:9058295686" class="btn btn-primary" style="font-size: 18px; padding: 16px 32px;">(905) 829-5686</a>
+                <a href="mailto:reception@kmthealth.com" class="btn" style="font-size: 18px; padding: 16px 32px; border: 2px solid var(--kmt-teal); color: var(--kmt-teal); background: transparent;">Email Us</a>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; text-align: center; margin-top: 60px;">
+                <div>
+                    <div style="font-size: 40px; margin-bottom: 12px;">&#128205;</div>
+                    <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Oakville (Main)</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">1939 Ironoak Way, Unit A204</p>
+                </div>
+                <div>
+                    <div style="font-size: 40px; margin-bottom: 12px;">&#128205;</div>
+                    <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Ajax</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Durham Region</p>
+                </div>
+                <div>
+                    <div style="font-size: 40px; margin-bottom: 12px;">&#128205;</div>
+                    <h4 style="font-size: 16px; color: var(--text-primary); margin-bottom: 8px;">Maple</h4>
+                    <p style="font-size: 14px; color: var(--text-muted);">Woodbridge Area</p>
+                </div>
+            </div>
+
+            <a href="locations.html" style="display: inline-block; margin-top: 30px; color: var(--kmt-teal); font-weight: 600; text-decoration: none;">
+                View All Locations &rarr;
+            </a>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="cta-content">
+            <div class="container">
+                <h2>New Patient? Start Here</h2>
+                <p>If you're new to KMT Medical, our team will help you find the right service and practitioner for your unique needs. Call us to get started on your wellness journey.</p>
+                <div class="cta-buttons">
+                    <a href="tel:9058295686" class="btn btn-primary">(905) 829-5686</a>
+                    <a href="locations.html" class="btn btn-white">Find a Location</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" style="display: inline-block; margin-bottom: 20px;">
+                        <img src="images/kmtlogo.avif" alt="KMT Medical and Allied Health Group" style="height: 50px; width: auto;">
+                    </a>
+                    <p>Integrated mental health, psychological assessment, naturopathic medicine, and holistic wellness services across the GTA.</p>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/KMT.alliedhealth" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/KMT.health" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/kmt-alliedhealth" class="social-icon" aria-label="LinkedIn" target="_blank" rel="noopener">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <div class="footer-links">
+                        <a href="#">Psychotherapy</a>
+                        <a href="assessments.html">Assessments</a>
+                        <a href="naturopathy.html">Naturopathy</a>
+                        <a href="ivtherapy.html">IV Therapy</a>
+                        <a href="shop.html">Shop</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Our Locations</h4>
+                    <div class="footer-links">
+                        <a href="locations.html#oakville" style="display: flex; align-items: center; gap: 8px;">
+                            Oakville <span style="font-size: 10px; background: var(--kmt-coral); color: white; padding: 2px 8px; border-radius: 10px; text-transform: uppercase; letter-spacing: 0.5px;">Main</span>
+                        </a>
+                        <a href="locations.html#ajax">Ajax</a>
+                        <a href="locations.html#maple">Maple</a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Get In Touch</h4>
+                    <div class="footer-links">
+                        <a href="tel:9058295686" style="font-size: 18px; font-weight: 700; opacity: 1;">(905) 829-5686</a>
+                        <a href="mailto:reception@kmthealth.com">reception@kmthealth.com</a>
+                        <p style="font-size: 13px; opacity: 0.7; margin-top: 16px; line-height: 1.6;">
+                            Mon-Fri: 9am-8pm<br>
+                            Sat: 10am-4pm<br>
+                            Sun: Closed
+                        </p>
+                    </div>
+                    <a href="book.html" class="footer-cta-btn">Book Now</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 KMT Medical & Allied Health Group. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.getElementById('navToggle');
+        const mainNav = document.getElementById('mainNav');
+
+        navToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+
+        // Dropdown toggle for mobile
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', function(e) {
+                if (window.innerWidth <= 1024) {
+                    const dropdown = this.querySelector('.dropdown-menu');
+                    if (dropdown && !e.target.closest('.dropdown-menu')) {
+                        e.preventDefault();
+                        this.classList.toggle('dropdown-open');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
