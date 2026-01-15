@@ -1,6 +1,6 @@
 # KMT Medical Website Project
 
-**Last Updated:** 2026-01-14
+**Last Updated:** 2026-01-15
 
 ## Current Status
 
@@ -38,7 +38,7 @@
 - [x] **Practitioner photos added**: All 8 practitioners now have named photos (karen.avif, ibby.avif, pamela.avif, ronald.avif, abeera.avif, rukshan.avif, shahana.avif, cindy.jpg)
 - [x] **Team page fully populated**: All 8 practitioners with correct photos, bios, and specialties
 - [x] **Dr. Ibby info corrected**: Updated with correct credentials (ND, MAc) and specialties (Genomic Wellness, SIBO/IBS, Pelvic Health, Fertility, Acupuncture)
-- [x] **Homepage team section updated**: Replaced placeholder names with actual practitioners (Karen, Ronald, Pamela, Ibby) with correct photos
+- [x] **Homepage team section updated**: Replaced placeholder names with actual practitioners (Karen, Rukshan, Pamela, Ibby) with correct photos
 - [x] **Navigation updated across all pages**: Holistic Wellness dropdown now includes "Prenatal & Postnatal Support" link
 
 #### Latest Updates (2026-01-14 - Session 4)
@@ -48,6 +48,9 @@
 - [x] **Book Now page updated**: Removed Dr. Ronald Frey (consultant - bookings via admin), added Abeera Rahil and Rukshan Mehta as bookable clinicians
 - [x] **Navigation updated across all pages**: RMT links now point to rmt.html instead of placeholder #
 - [x] **Text selection enabled**: Added CSS to allow copying text from cards, team cards, and FAQ sections across the site
+
+#### Latest Updates (2026-01-15 - Session 5)
+- [x] **Homepage team section updated**: Replaced Dr. Ronald Frey (consultant) with Rukshan Mehta (RSW, Psychotherapist) - homepage now shows only core team members (Karen, Rukshan, Pamela, Ibby)
 
 ### Pending
 - [ ] Dedicated Holistic Wellness landing page (currently dropdown only)
