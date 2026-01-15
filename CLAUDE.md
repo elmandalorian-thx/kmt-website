@@ -41,6 +41,14 @@
 - [x] **Homepage team section updated**: Replaced placeholder names with actual practitioners (Karen, Ronald, Pamela, Ibby) with correct photos
 - [x] **Navigation updated across all pages**: Holistic Wellness dropdown now includes "Prenatal & Postnatal Support" link
 
+#### Latest Updates (2026-01-14 - Session 4)
+- [x] **EmpowerHer page updated**: "Aesthetic Treatments" renamed to "Integrative Skin and Wellness" with new description about advanced skin treatments, injectables, neuromodulators, biostimulatory services
+- [x] **RMT page created** (`rmt.html`): New "Call to Join the Waitlist" page for Registered Massage Therapy - similar to shop.html Coming Soon style
+- [x] **Session duration corrected**: Changed from 50 minutes to 60 minutes on empowerher.html and psychotherapy.html
+- [x] **Book Now page updated**: Removed Dr. Ronald Frey (consultant - bookings via admin), added Abeera Rahil and Rukshan Mehta as bookable clinicians
+- [x] **Navigation updated across all pages**: RMT links now point to rmt.html instead of placeholder #
+- [x] **Text selection enabled**: Added CSS to allow copying text from cards, team cards, and FAQ sections across the site
+
 ### Pending
 - [ ] Dedicated Holistic Wellness landing page (currently dropdown only)
 - [ ] Ajax and Maple location addresses (TBD from client)
@@ -173,6 +181,7 @@ Add to existing content:
 ├── contact.html        # Contact Us page with form (NEW Jan 2026)
 ├── team.html           # Our Team page - all 8 practitioners (NEW Jan 2026)
 ├── shop.html           # Shop Coming Soon placeholder
+├── rmt.html            # Registered Massage Therapy - Waitlist page (NEW Jan 2026)
 ├── css/
 │   └── styles.css      # Main stylesheet
 ├── images/

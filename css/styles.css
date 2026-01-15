@@ -1656,3 +1656,47 @@ h1, h2, h3, h4 {
         font-size: 15px !important;
     }
 }
+
+/* ===================================
+   TEXT SELECTION - Enable text copying
+   =================================== */
+
+/* Allow text selection on all card content */
+.card,
+.card-inner,
+.card h3,
+.card p,
+.card span,
+.card-title-group,
+.card-tags,
+.card-tag,
+.featured-stats,
+.featured-stat,
+.featured-stat-number,
+.featured-stat-label,
+.team-card,
+.team-info,
+.team-info h3,
+.team-info p,
+.team-specialties,
+.team-specialty,
+.faq-answer-content,
+.faq-answer-content p,
+.faq-answer-content li {
+    user-select: text;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+}
+
+/* Ensure links inside cards still work but allow text selection */
+a.card {
+    cursor: pointer;
+}
+
+a.card h3,
+a.card p,
+a.card span:not(.card-link) {
+    user-select: text;
+    -webkit-user-select: text;
+}
