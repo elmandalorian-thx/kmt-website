@@ -1,6 +1,6 @@
 # KMT Medical Website Project
 
-**Last Updated:** 2026-01-15
+**Last Updated:** 2026-01-17
 
 ## Current Status
 
@@ -51,6 +51,18 @@
 
 #### Latest Updates (2026-01-15 - Session 5)
 - [x] **Homepage team section updated**: Replaced Dr. Ronald Frey (consultant) with Rukshan Mehta (RSW, Psychotherapist) - homepage now shows only core team members (Karen, Rukshan, Pamela, Ibby)
+
+#### Latest Updates (2026-01-17 - Session 6)
+- [x] **README.md created**: GitHub documentation file with project overview, structure, tech stack, and design system
+- [x] **EmpowerHer page marketing overhaul**: Repositioned for executive women targeting "glow up" and peak performance
+  - Changed "Who Benefits" section to "Why Join" with positive outcome-focused messaging
+  - Updated benefit cards: "Reclaim Your Energy", "Sharpen Your Edge", "Your Personal Glow-Up"
+  - Redesigned lonely text section into "Your Journey" with "From Overwhelmed to Empowered" before/after visual
+- [x] **Aesthetic services removed from EmpowerHer**: Due to plaza exclusivity restrictions
+  - Renamed "Integrative Skin and Wellness" to "Integrative Wellness Therapies"
+  - Removed mentions of microneedling, Botox, injectables, neuromodulators
+  - Focus now on headaches, brain fog, stress-related tension, weight management
+  - Updated FAQ to remove "aesthetic services" reference
 
 ### Pending
 - [ ] Dedicated Holistic Wellness landing page (currently dropdown only)
@@ -206,6 +218,7 @@ Add to existing content:
 │   ├── Site updates - 2026-01-14.docx # January 2026 updates
 │   ├── KMT_Naturopathy_Page_Copy.docx # Dr. Ibby Omole content
 │   └── KMT_IV_Therapy_Page_Copy.docx # Pamela Guardado IV Therapy content
+├── README.md           # GitHub documentation
 └── CLAUDE.md           # This file - project context
 ```
 
