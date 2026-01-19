@@ -80,9 +80,9 @@ KMT Medical provides integrated healthcare services including psychotherapy, psy
 
 ## Locations
 
-1. **Oakville (Main)** - 1939 Ironoak Way, Unit A204, Oakville, ON L6H 3V8
-2. **Ajax** - Address TBD
-3. **Maple** - Address TBD
+1. **Oakville (Main Office)** - 1939 Ironoak Way, Unit A204, Oakville, ON L6H 3V8
+2. **Ajax** - 20 Pugsley Court, Ajax, ON L1Z 0K4
+3. **Maple/Vaughan (Hybrid)** - 9131 Keele Street, Suite A4, Vaughan, ON L4K 0G7
 
 ## License
 

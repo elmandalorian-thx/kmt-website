@@ -1,6 +1,6 @@
 # KMT Medical Website Project
 
-**Last Updated:** 2026-01-17
+**Last Updated:** 2026-01-19
 
 ## Current Status
 
@@ -64,9 +64,14 @@
   - Focus now on headaches, brain fog, stress-related tension, weight management
   - Updated FAQ to remove "aesthetic services" reference
 
+#### Latest Updates (2026-01-19 - Session 7)
+- [x] **All location addresses added**: Ajax (20 Pugsley Court, Ajax, ON L1Z 0K4) and Maple/Vaughan (9131 Keele Street, Suite A4, Vaughan, ON L4K 0G7)
+- [x] **Updated pages**: index.html, locations.html, contact.html, book.html, README.md with full addresses and Get Directions links
+- [x] **Psychotherapy page expanded**: Added 4 new services - Sex Therapy, Addiction Counselling, Anger Management, Career Development
+- [x] **Services logically paired**: Couples + Sex Therapy, Family + Teen, EMDR + Addiction, Anger + Career
+
 ### Pending
 - [ ] Dedicated Holistic Wellness landing page (currently dropdown only)
-- [ ] Ajax and Maple location addresses (TBD from client)
 - [ ] Booking system integration (Book buttons currently use placeholder links)
 
 ---
@@ -92,9 +97,9 @@ This is a website redesign/update project for KMT Medical, a multidisciplinary h
 - Services include: Psychotherapy, Assessments, Naturopathy, IV Therapy, Acupuncture, RMT, Supplements
 
 ### Locations (3 Total)
-1. **Oakville (Main)** - 1939 Ironoak Way, Unit A204, Oakville, ON L6H 3V8
-2. **Ajax** - Address TBD
-3. **Maple (Woodbridge area)** - Address TBD
+1. **Oakville (Main Office)** - 1939 Ironoak Way, Unit A204, Oakville, ON L6H 3V8
+2. **Ajax** - 20 Pugsley Court, Ajax, ON L1Z 0K4
+3. **Maple/Vaughan (Hybrid)** - 9131 Keele Street, Suite A4, Vaughan, ON L4K 0G7
 
 Footer and site must represent all three locations.
 
