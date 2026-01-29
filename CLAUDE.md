@@ -1,6 +1,6 @@
 # KMT Medical Website Project
 
-**Last Updated:** 2026-01-19
+**Last Updated:** 2026-01-29
 
 ## Current Status
 
@@ -70,8 +70,12 @@
 - [x] **Psychotherapy page expanded**: Added 4 new services - Sex Therapy, Addiction Counselling, Anger Management, Career Development
 - [x] **Services logically paired**: Couples + Sex Therapy, Family + Teen, EMDR + Addiction, Anger + Career
 
+#### Latest Updates (2026-01-29 - Session 8)
+- [x] **Holistic Wellness page created** (`holistic.html`): New landing page featuring integrated wellness approach with six pillars: IV Therapy, Naturopathic Medicine, Hormone Health, Acupuncture, Aesthetics (without microneedling, PRP, rejuvenating serums), and EmpowerHer Program
+- [x] **Navigation updated across all pages**: Holistic Wellness dropdown now links to holistic.html with "Overview" option, all footer links updated
+- [x] **Value strip sections enhanced**: All pages with value strip boxes now have orange section-label-badge headers with title and subheadline (ivtherapy.html, assessments.html, naturopathy.html, perinatal.html, psychotherapy.html, holistic.html, index.html)
+
 ### Pending
-- [ ] Dedicated Holistic Wellness landing page (currently dropdown only)
 - [ ] Booking system integration (Book buttons currently use placeholder links)
 
 ---
@@ -202,6 +206,7 @@ Add to existing content:
 ├── team.html           # Our Team page - all 8 practitioners (NEW Jan 2026)
 ├── shop.html           # Shop Coming Soon placeholder
 ├── rmt.html            # Registered Massage Therapy - Waitlist page (NEW Jan 2026)
+├── holistic.html       # Holistic Wellness landing page (NEW Jan 2026)
 ├── css/
 │   └── styles.css      # Main stylesheet
 ├── images/
@@ -225,11 +230,6 @@ Add to existing content:
 │   └── KMT_IV_Therapy_Page_Copy.docx # Pamela Guardado IV Therapy content
 ├── README.md           # GitHub documentation
 └── CLAUDE.md           # This file - project context
-```
-
-### Pages Still Needed
-```
-├── holistic.html       # Holistic Wellness landing page (RMT, etc.)
 ```
 
 ### Design System
