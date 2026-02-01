@@ -1,6 +1,6 @@
 # KMT Medical Website Project
 
-**Last Updated:** 2026-01-29
+**Last Updated:** 2026-02-01
 
 ## Current Status
 
@@ -74,6 +74,26 @@
 - [x] **Holistic Wellness page created** (`holistic.html`): New landing page featuring integrated wellness approach with six pillars: IV Therapy, Naturopathic Medicine, Hormone Health, Acupuncture, Aesthetics (without microneedling, PRP, rejuvenating serums), and EmpowerHer Program
 - [x] **Navigation updated across all pages**: Holistic Wellness dropdown now links to holistic.html with "Overview" option, all footer links updated
 - [x] **Value strip sections enhanced**: All pages with value strip boxes now have orange section-label-badge headers with title and subheadline (ivtherapy.html, assessments.html, naturopathy.html, perinatal.html, psychotherapy.html, holistic.html, index.html)
+
+#### Latest Updates (2026-02-01 - Session 9)
+- [x] **IV Therapy page expanded** (`ivtherapy.html`): Added 3 new comprehensive sections:
+  - Glutathione IV Therapy featured section (detoxification, skin brightening, anti-aging benefits, IV and IM options)
+  - IV Drip Therapies consolidated box (Vitamin C IV, Immune Support IV, Myers' Cocktail, Glutathione IV)
+  - Vitamin Injection Services consolidated box (Metabolic Support, MIC + L-Carnitine, Vitamin D, Vitamin C + Zinc + Glutathione)
+- [x] **Clinical Peeling page created** (`peeling.html`): 3-session PCA chemical peel series with:
+  - PCA Perfecting Peel and No-Peel Peel options
+  - Supportive treatments (microdermabrasion, microcurrent)
+  - Wellness support included (Glutathione or Vitamin D injections x3, $150 value)
+  - Pricing: $360 series / $120 single session
+  - Additional options: Restorative Skin Treatment ($160), Facial + IV ($250)
+- [x] **12-Week Weight Loss Program page created** (`weightloss.html`): Comprehensive metabolic support program featuring:
+  - PCDC fat-dissolving treatments ($325 per area)
+  - 5 MIC + L-Carnitine injections
+  - 2 IV Glutathione sessions
+  - 4 lymphatic drainage massage sessions
+  - Detailed 12-week treatment timeline
+  - Treatment areas: submental, abdomen, thighs, arms, bra line
+- [x] **Navigation updated across all 16 pages**: Holistic Wellness dropdown now includes Clinical Peeling and Weight Loss Program links
 
 ### Pending
 - [ ] Booking system integration (Book buttons currently use placeholder links)
@@ -207,6 +227,8 @@ Add to existing content:
 ├── shop.html           # Shop Coming Soon placeholder
 ├── rmt.html            # Registered Massage Therapy - Waitlist page (NEW Jan 2026)
 ├── holistic.html       # Holistic Wellness landing page (NEW Jan 2026)
+├── peeling.html        # Clinical Peeling - PCA chemical peel series (NEW Feb 2026)
+├── weightloss.html     # 12-Week Weight Loss & Metabolism Program (NEW Feb 2026)
 ├── css/
 │   └── styles.css      # Main stylesheet
 ├── images/
